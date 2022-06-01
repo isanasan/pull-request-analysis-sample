@@ -24,10 +24,10 @@ import { fileSync } from "tmp";
 // GITHUB_TOKEN=... GOOGLE_APPLICATION_CREDENTIALS=/path/to/keyfile.json START_DATE=2020-10-05 END_DATE=2020-10-12 yarn --silent ts-node script/import-pull-request.ts
 
 // どのgithub organizationsのデータを取得するか
-const GITHUB_ORG_NAME = "hatena";
+const GITHUB_ORG_NAME = "LancersDevTeam";
 const GITHUB_GRAPHQL_ENDPOINT = "https://api.github.com/graphql";
 // BigQueryのプロジェクトID
-const GCP_PROJECT_ID = "pull-request-analysis-sample";
+const GCP_PROJECT_ID = "solar-attic-352013";
 // GitHubのAPIからどの程度並列にデータを取得するか
 const CONCURRENT_FETCH_COUNT = 10;
 

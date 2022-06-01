@@ -1,8 +1,3 @@
-variable "google_credentials" {
-  type    = string
-  default = "{}"
-}
-
 terraform {
   required_providers {
     google = {
@@ -22,8 +17,8 @@ terraform {
 }
 
 provider "google" {
-  credentials = var.google_credentials
-  project     = "pull-request-analysis-sample"
+  credentials = "${file("solar-attic-352013-9a8671f4f33f.json")}"
+  project     = "solar-attic-352013"
   region      = "asia-northeast1"
 }
 
