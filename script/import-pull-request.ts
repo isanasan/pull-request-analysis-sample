@@ -137,8 +137,8 @@ function pullRequestNodeToJson(node: PullRequestNode): string {
     id: node.id,
     title: node.title,
     author: {
-      login: node.author.login,
-      typename: node.author.__typename,
+      login: node.author ? node.author.login : undefined,
+      typename: node.author ? node.author.__typename : undefined,
     },
     url: node.url,
     createdAt: node.createdAt,
@@ -161,7 +161,7 @@ type PullRequestNode = {
   author: {
     __typename: string;
     login: string;
-  };
+  } | null;
   url: string;
   number: number;
   repository: {
