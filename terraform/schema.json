@@ -1,0 +1,106 @@
+[
+    {
+        "mode": "REPEATED",
+        "name": "labelNames",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "headRefName",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "baseRefName",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "deletions",
+        "type": "INTEGER"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "typename",
+                "type": "STRING"
+            },
+            {
+                "mode": "NULLABLE",
+                "name": "login",
+                "type": "STRING"
+            }
+        ],
+        "mode": "NULLABLE",
+        "name": "author",
+        "type": "RECORD"
+    },
+    {
+        "description": "bq-datetime",
+        "mode": "NULLABLE",
+        "name": "firstCommittedAt",
+        "type": "TIMESTAMP"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "id",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "additions",
+        "type": "INTEGER"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "totalCount",
+                "type": "INTEGER"
+            }
+        ],
+        "mode": "NULLABLE",
+        "name": "reviews",
+        "type": "RECORD"
+    },
+    {
+        "description": "bq-datetime",
+        "mode": "NULLABLE",
+        "name": "mergedAt",
+        "type": "TIMESTAMP"
+    },
+    {
+        "fields": [
+            {
+                "mode": "NULLABLE",
+                "name": "nameWithOwner",
+                "type": "STRING"
+            }
+        ],
+        "mode": "NULLABLE",
+        "name": "repository",
+        "type": "RECORD"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "number",
+        "type": "INTEGER"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "title",
+        "type": "STRING"
+    },
+    {
+        "description": "bq-datetime",
+        "mode": "NULLABLE",
+        "name": "createdAt",
+        "type": "TIMESTAMP"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "url",
+        "type": "STRING"
+    }
+]
