@@ -8,5 +8,5 @@ $ terraform init
 ## 適用
 ```
 $ terraform plan
-$ terraform apply
+$ terraform apply -var='project_id=<YOUR_PROJECT_ID>'
 ```
